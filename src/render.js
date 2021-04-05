@@ -1,5 +1,8 @@
 
-let ctx = document.getElementById("chart");
+// neither work
+let ctx = document.getElementById("chart").getContext("2d");
+//let ctx = document.getElementById("chart");
+
 console.log(ctx);
 window.electron.createChart(ctx, {
     type: 'bar',
